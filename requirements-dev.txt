@@ -1,0 +1,7 @@
+beautifulsoup4
+lxml
+codecov
+pytest-cov
+mypy
+flake8
+pylint
