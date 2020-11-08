@@ -8,8 +8,8 @@ install:
 # command to run tests
 script:
   - python -m pytest --cov-report term --cov=beautifulsoup4_helpers
-  - python -m mypy beautifulsoup4_helpers.py --ignore-missing-imports
-  - python -m pylint beautifulsoup4_helpers.py
-  - python -m flake8 beautifulsoup4_helpers.py
+  - python -m mypy beautifulsoup4_helpers --ignore-missing-imports
+  - python -m pylint beautifulsoup4_helpers
+  - python -m flake8 beautifulsoup4_helpers
 after_success:
   - codecov

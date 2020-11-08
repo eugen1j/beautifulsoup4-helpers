@@ -5,3 +5,5 @@ pytest-cov
 mypy
 flake8
 pylint
+wheel
+twine

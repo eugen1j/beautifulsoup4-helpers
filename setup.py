@@ -6,7 +6,8 @@ from setuptools import setup, Command
 
 # Package meta-data.
 NAME = "beautifulsoup4_helpers"
-DESCRIPTION = "Python asynchronous library for web scraping"
+DESCRIPTION = "Frequently used functions for html parsing " \
+              "with beautifulsoup4 https://pypi.org/project/beautifulsoup4/"
 URL = "https://github.com/eugen1j/beautifulsoup4-helpers"
 EMAIL = "eugenij.bondar@gmail.com"
 AUTHOR = "eugen1j"
@@ -57,13 +58,7 @@ setup(
     author=AUTHOR,
     packages=[NAME],
     install_requires=[
-        "pyfakefs",
-        "pytest",
         "beautifulsoup4",
-        "aiohttp",
-        "pytest-asyncio",
-        "lxml",
-        "pytest-aiohttp",
     ],
     description=DESCRIPTION,
     long_description=long_description,
@@ -74,20 +69,18 @@ setup(
     author_email=EMAIL,
     license="MIT",
     keywords="""
-                python3
-                beautifulsoup4_helpers
-                crawler
-                scraper
-                python-library
-               """,
+        python3
+        beautifulsoup4_helpers
+        parser
+        html
+    """,
     python_requires=REQUIRES_PYTHON,
     zip_safe=False,
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.7",
-        "Development Status :: 5 - Production/Stable",
-        "Framework :: AsyncIO",
+        "Development Status :: 3 - Alpha",
         "Operating System :: Unix",
         "Operating System :: Microsoft :: Windows",
         "Operating System :: MacOS",
